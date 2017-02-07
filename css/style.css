@@ -1,0 +1,22 @@
+/* Empty. Add your own CSS if you like */
+
+body
+{
+	background-color: #efefef;
+}
+
+.title
+{
+	font-weight: 700 !important;
+	font-size: 26px !important;
+}
+
+#mainList .introText
+{
+	text-align: center;
+}
+
+a
+{
+	font-size: 12px;
+}

@@ -1,0 +1,15 @@
+<ion-header-bar classic="bar-dark">
+	<h1 class="title">GOT Characters</h1>
+</ion-header-bar>
+
+<ion-content>
+	<h1>{{charDetail.name}}</h1>
+	<p>Gender: {{charDetail.gender}}</p>
+	<p>Born: {{charDetail.born}} <span data-ng-if="!charDetail.born">Unknown</span></p>
+	<p>Relevent Imagery</p>
+	<img data-ng-src="img/{{charDetail.largeImage}}.jpg" alt="Character Image">
+</ion-content>
+
+<ion-footer-bar class="bar-stable">
+	<button class="button button-dark icon-left ion-home" data-ng-click="goHome()">Home</button>
+</ion-footer-bar>

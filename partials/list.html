@@ -1,0 +1,20 @@
+<ion-header-bar classic="bar-dark">
+	<h1 class="title">GOT Characters</h1>
+</ion-header-bar>
+
+<ion-content>
+
+<ion-refresher pulling-text="Pull to Refresh" refreshing-text="LOADING" on-refresh="loadChars()">
+</ion-refresher>
+
+	<ion-list id="mainList">
+	<p class="introText">Pull down to refresh list</p>
+		<ion-item ng-repeat="char in chars" class="item item-thumbnail-left">
+			<img data-ng-src="img/{{newHouse[$index]}}.png" alt="GOT House Banners">
+			<h2>{{char.name}}</h2>
+			<p>Title: <span data-ng-bind-html="char.titles"></span></p>
+			<a href="#details/{{$index}}">MORE INFORMATION</a>
+		</ion-item>
+	</ion-list>
+
+</ion-content>
